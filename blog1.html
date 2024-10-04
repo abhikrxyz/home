@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+  <meta content="webkit" name="renderer" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+  <title>Abhikrxyz Blog</title>
+  <link href="normalize.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assests/css/xyz.css">
+  <link rel="shortcut icon" href="./assests/images/abhikr-favicon-color(2).png" type="image/svg+xml">
+  <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <meta name="generator" content="Typecho 1.1/17.10.30">
+  <meta name="template" content="default">
+
+  <script type="text/javascript">
+    (function() {
+      window.TypechoComment = {
+        dom: function(id) {
+          return document.getElementById(id);
+        },
+        create: function(tag, attr) {
+          var el = document.createElement(tag);
+          for (var key in attr) {
+            el.setAttribute(key, attr[key]);
+          }
+          return el;
+        },
+        reply: function(cid, coid) {
+          // Reply functionality
+        },
+        cancelReply: function() {
+          // Cancel reply functionality
+        }
+      };
+    })();
+  </script>
+</head>
+
+<body>
+  <header class="clearfix" id="header">
+    <div class="container">
+      <div class="row">
+        <div class="site-name col-mb-12 col-9">
+          <a href="" id="logo">
+            <span id="welcome-message"></span> - Abhikrxyz Blog
+          </a>
+
+          <script>
+            // Function to shuffle the array
+            function shuffleArray(array) {
+              for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+              }
+            }
+
+            // Function to generate a random integer between min and max (inclusive)
+            function getRandomInt(min, max) {
+              return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            // Function to make selection unpredictable
+            function getRandomMessage(messages) {
+              for (let i = 0; i < 3; i++) {
+                shuffleArray(messages);
+              }
+              const randomIndex = getRandomInt(0, messages.length - 1);
+              return messages[randomIndex];
+            }
+
+            // Array of welcome messages
+            const welcomeMessages = [
+              "Bienvenido!!", "Добро пожаловать!!", "欢迎!!", "ようこそ!!", "환영합니다!!",
+              "أهلاً وسهلاً!!", "स्वागत है!!", "স্বাগতম!!", "Hoş geldiniz!!", "Chào mừng!!",
+              "ยินดีต้อนรับ!!", "Bienvenue!!", "Bem-vindo!!", "خوش آمدید!!", "Selamat datang!!",
+              "Karibu!!", "Maligayang pagdating!!", "ברוך הבא!!", "Ласкаво просимо!!", "Добродошли!!",
+              "Dobrodošli!!", "Sveiki atvykę!!", "Laipni lūdzam!!", "Tere tulemast!!", "Velkomin!!",
+              "Willkommen!!", "Benvenuto!!", "Merħba!!", "Բարի գալուստ!!", "კეთილი იყოს თქვენი მობრძანება!!",
+              "Vitajte!!", "Maayong pag-abot!!", "स्वागत छ!!", "සාදරයෙන් පිළිගනිමු!!", "Қош келдіңіз!!",
+              "வரவேற்கிறேன்!!", "స్వాగతం!!", "خوش آمدید!!", "សូមស្វាគមន៍!!", "ຍິນດີຕ໭ນຮັບ!!",
+              "ကြိုဆိုပါတယ်!!", "Dobrodošli!!", "Добредојдовте!!", "Mirë se vini!!", "Croeso!!",
+              "Fáilte!!", "Fàilte!!", "Ongi etorri!!", "Benvingut!!",
+            ];
+
+            const welcomeMessageElement = document.getElementById('welcome-message');
+
+            function updateWelcomeMessage() {
+              const randomMessage = getRandomMessage(welcomeMessages);
+              welcomeMessageElement.innerText = randomMessage;
+            }
+
+            // Initial message
+            updateWelcomeMessage();
+
+            // Update message every 5 seconds
+            setInterval(updateWelcomeMessage, 100000);
+          </script>
+
+          <p class="description">
+            The sky is empty, the fruit is empty, and the star is patrolling. It's the same as today's Let's go for a walk too.
+          </p>
+        </div>
+        <div class="col-mb-12">
+          <nav class="clearfix" id="nav-menu" role="navigation">
+            <a href="index.html">Home</a>
+            <a class="current" href="blog.html">Blog</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="body">
+    <div class="container">
+      <div class="row">
+        <div class="col-mb-12 col-8" id="main" role="main">
+          <article class="post" itemscope itemtype="">
+            <h1 class="post-title" itemprop="name headline">
+              <a href="blog1.html" itemtype="url">Self-use | Rust basic learning materials</a>
+            </h1>
+            <p>
+              Rust Language : <a href="https://github.com/rust-lang/rust">Github</a>
+              <br><br>
+              Welcome to Rust!
+            </p>
+            <p>
+              Rust is a systems programming language focused on safety, speed, and concurrency.
+              It was designed to help developers create reliable and efficient software,
+              minimizing the common pitfalls of memory management while maximizing performance.
+              <br><br>
+              Key Features!!
+              <br><br>
+              Memory Safety: Rust uses a unique ownership system with rules that the compiler checks at compile time,
+              preventing data races and ensuring safe memory access without a garbage collector.
+              <br><br>
+              Concurrency: With its fearless concurrency model, Rust enables safe parallel programming,
+              allowing you to harness the power of modern multi-core processors easily.
+              <br><br>
+              Performance: Rust code is as fast as C/C++, giving you the control you need to write high-performance applications.
+            </p>
+
+            <h4>Rustup's own documentation</h4>
+            <a href="https://doc.rust-lang.org/book/">Programming Rust</a>
+            <br><br>
+            <code>rustup doc --std</code>
+            <h4>PDF File:</h4>
+            <a href="./assests/test/rust_book.pdf">The Rust Programming Language</a>
+            <br>
+            <a href="./assests/test/Programming Rust 2nd Edition.pdf">The Rust Programming Language, 2nd Edition</a>
+            <br>
+            <h4>Rust Language Cheat Sheet:</h4>
+            <a href="https://cheats.rs/">Rust Cheats</a>
+            <h4>Learn rust in y minutes:</h4>
+            <a href="https://learnxinyminutes.com/docs/rust/">Rustinymminutes</a>
+            <p>
+              <h1 class="post-title" itemprop="name headline">
+                <a href="" itemtype="url">Contacts</a>
+              </h1>
+              <div class="post-content" itemprop="articleBody">
+                <p>Email: <a href="pyabhikr@gmail.com">pyabhikr@gmail.com</a></p>
+                <p>Github: <a href="https://github.com/abhikrxyz">Abhikrxyz</a></p>
+                <p>Telegram: <a href="https://telegram.me/Abhikrxyz">@Abhikrxyz</a></p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/abhi-kr-1a7383315/">Abhikr</a></p>
+              </div>
+            </p>
+          </article>
+          <div id="comments">
+            <ol class="comment-list">
+              <!-- Comments Section -->
+              <!-- This would ideally be generated dynamically from a database -->
+            </ol>
+          </div>
+        </div>
+        <div class="col-mb-12 col-offset-1 col-3 kit-hidden-tb" id="secondary" role="complementary">
+          <!-- Additional Widgets can be added here if needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" role="contentinfo">
+    © 2024
+    <a href="index.html">Thanks For Visiting - Abhikrxyz Blog</a>
+    Plz Visit
+    <a href="https://abhikrxyz.github.io/{{ url_for('home') }}/">Abhikr!!</a>
+    All Rights Reserved.
+  </footer>
+</body>
+
+</html>
