@@ -759,7 +759,7 @@ body {
 }
 
 a {
-    color: #008080;
+    color: var(--main-color);;
     text-decoration: none
 }
 
@@ -1208,39 +1208,39 @@ img.alignright {
     }
 }
 
-/* .btn Class with styling */
-/* .btn Class with styling */
 .btn {
     position: relative;
-    background-color: #008080;
+    background-color: var(--main-color);;
     color: var(--text-white);
-    max-width: max-content;
-    min-width: 180px;
-    height: 50px;
+    /* height: 50px; */
+    padding-right: 20px; 
+    padding-left: 10px; 
     place-items: center;
-    padding-inline: 30px;
+    /*padding-inline: 10px;*/
     clip-path: var(--clip-path-3);
     overflow: hidden;
-    border: none;  /* Removed the border */ 
+    border: none;
+    display: inline-flex;
 }
 
 
 #welcome-button {
-    margin-right: 0px; /* Optional: Adds spacing between the button and the text */
+    margin-right: 10px; 
     position: relative;
     font-family: 'Oxanium', sans-serif;
     font-size: var(--fontSize-6);
-    top: -10px; /* Moves the button 20px upwards */
+    top: -10px; 
    
   }
 
-  /* Define the custom clip-path */
+
   :root {
     --clip-path-3: polygon(0% 0%, 90% 0, 100% 100%, 100% 100%, 0 100%);
     --gradient-1: linear-gradient(to right bottom, hsl(299, 100%, 52%), hsl(291, 100%, 58%), hsl(283, 100%, 60%), hsl(273, 100%, 62%), hsl(262, 100%, 63%), hsl(242, 100%, 69%), hsl(223, 100%, 62%), hsl(210, 100%, 50%), hsl(203, 100%, 50%), hsl(198, 100%, 50%), hsl(192, 100%, 48%), hsl(185, 90%, 48%));
-    --text-white: white; /* Assuming this variable is defined, can be changed as needed */
-    --fontSize-6: 35px; /* Modify based on your preference */
-    --weight-semiBold: 600; /* Modify based on your preference */
+    --text-white: white; 
+    --main-color:#008080;
+    --fontSize-6: 35px; 
+    --weight-semiBold: 600; 
   }
   
 
